@@ -6,7 +6,7 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleMode}
-      className="flex items-center justify-center p-1 rounded-full text-light dark:text-dark bg-dark dark:bg-light"
+      className="flex items-center justify-center w-8 h-8 p-1 overflow-hidden rounded-full text-light dark:text-dark bg-dark dark:bg-light"
     >
       {mode === "dark" ? <SunIcon /> : <MoonIcon />}
     </button>
