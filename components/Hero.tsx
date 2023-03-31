@@ -61,7 +61,7 @@ export const Hero = () => {
             className="flex items-center self-start mx-auto mt-2 lg:mx-0"
           >
             <a
-              href={`${PREFIX}/batyr_khodzhakuliev_resume.pdf`}
+              href={`${PREFIX}/batyr_khodzhakuliev.pdf`}
               target="_blank"
               download
               className="flex gap-x-1 items-center border-2 border-dark bg-dark py-2.5 px-4 lg:px-6 rounded-lg lg:text-lg font-semibold hover:bg-light text-light hover:border-dark hover:bg-transparent hover:text-dark 
