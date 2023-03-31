@@ -11,7 +11,18 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut" href={`${PREFIX}/favicon.ico`} />
+        <link
+          rel="icon"
+          href={`${PREFIX}/favicon-light.ico`}
+          type="image/svg+xml"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={`${PREFIX}/favicon.ico`}
+          media="(prefers-color-scheme: dark)"
+        />
         <title>skaionedev | Portfolio</title>
         <meta
           name="description"
