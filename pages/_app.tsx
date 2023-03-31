@@ -5,12 +5,13 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { HireMe } from '@/components/HireMe'
 import '@/styles/globals.css'
+import { PREFIX } from '@/constants'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut" href="/portfolio/favicon.ico" />
+        <link rel="shortcut" href={`${PREFIX}/favicon.ico`} />
         <title>skaionedev | Portfolio</title>
         <meta
           name="description"

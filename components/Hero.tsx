@@ -1,9 +1,8 @@
-import { FC, PropsWithChildren } from "react"
-import devPic from "@/assets/webdev.svg"
-import { motion } from "framer-motion"
-
-import { AnimatedText } from "./AnimatedText"
-import { AiOutlineCloudDownload } from "react-icons/ai"
+import { FC, PropsWithChildren } from 'react'
+import { motion } from 'framer-motion'
+import { AnimatedText } from './AnimatedText'
+import { AiOutlineCloudDownload } from 'react-icons/ai'
+import { PREFIX } from '@/constants'
 
 export const Hero = () => {
   const years = new Date().getFullYear() - 2019
@@ -12,19 +11,23 @@ export const Hero = () => {
       <div className="flex-col items-center justify-center w-full lg:flex lg:justify-between lg:flex-row">
         <motion.div
           initial={{
-            opacity: 0,
+            opacity: 0
           }}
           whileInView={{
-            opacity: 1,
+            opacity: 1
           }}
           transition={{
             duration: 1,
-            delay: 0.1,
+            delay: 0.1
           }}
           viewport={{ once: true }}
           className="flex items-center lg:w-1/2"
         >
-          <img src={"/portfolio/webdev.svg"} className="w-full h-auto" alt="Ai photo" />
+          <img
+            src={`${PREFIX}/webdev.svg`}
+            className="w-full h-auto"
+            alt="Ai photo"
+          />
         </motion.div>
         <div className="flex flex-col items-center self-center lg:w-[45%] pt-12 lg:pt-0">
           <AnimatedText text="Bringing Vision to Life with Code" />
@@ -41,24 +44,24 @@ export const Hero = () => {
           <motion.div
             initial={{
               y: 60,
-              opacity: 0,
+              opacity: 0
             }}
             whileInView={{
               y: 0,
-              opacity: 1,
+              opacity: 1
             }}
             transition={{
               duration: 1,
-              type: "spring",
-              delay: 0.2,
+              type: 'spring',
+              delay: 0.2
             }}
             viewport={{
-              once: true,
+              once: true
             }}
             className="flex items-center self-start mx-auto mt-2 lg:mx-0"
           >
             <a
-              href="/batyr_khodzhakuliev_resume.pdf"
+              href={`${PREFIX}/batyr_khodzhakuliev_resume.pdf`}
               target="_blank"
               download
               className="flex gap-x-1 items-center border-2 border-dark bg-dark py-2.5 px-4 lg:px-6 rounded-lg lg:text-lg font-semibold hover:bg-light text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -87,19 +90,19 @@ const Description: FC<PropsWithChildren> = ({ children }) => {
     <motion.p
       initial={{
         y: 60,
-        opacity: 0,
+        opacity: 0
       }}
       whileInView={{
         y: 0,
-        opacity: 1,
+        opacity: 1
       }}
       transition={{
         duration: 1,
-        type: "spring",
-        delay: 0.1,
+        type: 'spring',
+        delay: 0.1
       }}
       viewport={{
-        once: true,
+        once: true
       }}
       className="text-base font-medium text-center text-slate-700 dark:text-light/70 lg:text-left"
     >
